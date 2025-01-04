@@ -45,9 +45,12 @@ class DebugPrintService {
   }
 }
 
+/// Alias for KPrint class to maintain backward compatibility
+typedef kprint = KPrint;
+
 /// A utility class for logging messages in debug mode.
 /// This class provides methods to log different types of messages (log, error, warning) with specific prefixes.
-class kprint {
+class KPrint {
   /// Logs a message with a note prefix.
   ///
   /// \param message The message to log.
