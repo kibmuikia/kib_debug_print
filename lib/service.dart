@@ -12,7 +12,7 @@ DebugPrintCallback setupDebugPrint() {
   } else {
     debugPrint = (String? message, {int? wrapWidth}) {
       if (message?.isNotEmpty ?? false) {
-        originalDebugPrint!(
+        originalDebugPrint(
           '#${++counter} [${stopwatch.elapsedMilliseconds}ms] $message *',
           wrapWidth: wrapWidth,
         );
@@ -46,6 +46,7 @@ class DebugPrintService {
 }
 
 /// Alias for KPrint class to maintain backward compatibility
+// ignore: camel_case_types
 typedef kprint = KPrint;
 
 /// A utility class for logging messages in debug mode.

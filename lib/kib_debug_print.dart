@@ -1,3 +1,3 @@
-library kib_debug_print;
+library;
 
 export 'service.dart';
